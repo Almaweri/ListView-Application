@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.csi5230.maged.listviewassignment.ProductDetailsActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/txtAddUpdate_ProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Product Price"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintRight_toLeftOf="@+id/btnSelectImage"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddUpdate_ProductName"/>
+
+    <TextView
+        android:id="@+id/txtOperationType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="Add/Update?"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <EditText
+        android:id="@+id/txtAddUpdate_ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Product Name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtAddUpdate_ProductPrice"
+        android:layout_marginTop="93dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtAddUpdate_ProductPrice"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Image:"
+        android:textSize="16sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="4dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtAddUpdate_ProductPrice"
+        app:layout_constraintTop_toTopOf="@+id/imgProductAddUpdate"/>
+
+    <ImageView
+        android:id="@+id/imgProductAddUpdate"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:cropToPadding="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddUpdate_ProductPrice"
+        app:srcCompat="@android:color/darker_gray"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="Change..."
+        android:textSize="10sp"
+        android:layout_marginStart="3dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="4dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/imgProductAddUpdate"
+        app:layout_constraintLeft_toRightOf="@+id/imgProductAddUpdate"
+        android:layout_marginLeft="3dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintRight_toLeftOf="@+id/btnCancel"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="122dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginEnd="92dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSave"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="92dp"/>
+
+</android.support.constraint.ConstraintLayout>
